@@ -1,7 +1,7 @@
 #include "Server.h"
 
 Server::Server(Database & db, int port) : mDB(db) {
-    ep = boost::asio::ip::tcp::endpoint(boost::asio::ip::tcp::v4(), port); // listen on 2001
+    ep = boost::asio::ip::tcp::endpoint(boost::asio::ip::tcp::v4(), port); // listen on 9000
 }
 void Server::start() {
     boost::asio::ip::tcp::acceptor tcp_acceptor{ioservice, ep};

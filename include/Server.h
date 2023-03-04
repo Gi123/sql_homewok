@@ -10,7 +10,6 @@
 #include <boost/asio/buffer.hpp>
 #include <list>
 
-#include "CommandParser.h"
 #include "Client.h"
 
 class Server
